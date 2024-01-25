@@ -48,7 +48,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0 -p 5500",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "format": "prettier --write \"./**/*.[jt]s?(x)\" \"./**/*.md\" \"./**/*.json\"",
