@@ -3,7 +3,7 @@ module.exports = {
     title: 'Cruise Docs',
   },
   /// this must match the path your webpage is displayed from (the second part of the ternary will be the path prefix for production)
-  pathPrefix: process.env.NODE_ENV === 'development' ? '' : '/CruiseDocs',
+  pathPrefix: process.env.NODE_ENV === 'development' ? '' : '',
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
