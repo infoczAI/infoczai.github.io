@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Cruise Docs',
   },
+  /// this must match the path your webpage is displayed from (the second part of the ternary will be the path prefix for production)
+  pathPrefix: process.env.NODE_ENV === 'development' ? '' : '/CruiseDocs',
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
@@ -89,7 +91,5 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
-  /// this must match the path your webpage is displayed from (the second part of the ternary will be the path prefix for production)
-  pathPrefix: process.env.NODE_ENV === 'development' ? '' : '',
+  ]
 }
