@@ -4,7 +4,6 @@
 <h1 align="center">
   Introduction
 </h1>
-
 # Gatsby Ant-Design Documentation Starter
 
 Forked from https://github.com/cvluca/gatsby-starter-markdown.

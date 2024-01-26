@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { RootLayout as Layout } from '../Layout'
 
+
 function PageTemplate({ data: { mdx } }: any) {
   return (
     <Layout sidebarRoot={mdx.frontmatter.root}>
