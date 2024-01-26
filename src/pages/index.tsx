@@ -1,9 +1,15 @@
-import * as React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'gatsby'
 import { Button } from 'antd'
 import { GithubOutlined, TwitterOutlined } from '@ant-design/icons'
 
 const IndexPage = () => {
+  const buttonRef = useRef(null);
+  useEffect(() => {
+    const button = buttonRef.current;
+    button.click();
+  }, []);
+
   return (
     <div align="center" style={{ padding: 80 }}>
       <p
@@ -42,7 +48,7 @@ const IndexPage = () => {
         </Button>
 
         <Button type="primary" size="large">
-          <Link to="/docs/template/get-started/introduction">Get Started</Link>
+          <Link ref={buttonRef} to="/docs/template/get-started/introduction">Get Started</Link>
         </Button>
       </Button.Group>
     </div>
